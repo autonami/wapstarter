@@ -1,0 +1,1277 @@
+/usr/sbin/mysqld, Version: 8.0.19 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2020-04-08T23:34:26.818992Z	    7 Connect	
+2020-04-08T23:34:26.819964Z	    7 Query	SELECT @@skip_networking, @@skip_name_resolve, @@have_ssl='YES', @@ssl_key, @@ssl_ca, @@ssl_capath, @@ssl_cert, @@ssl_cipher, @@ssl_crl, @@ssl_crlpath, @@tls_version
+2020-04-08T23:34:26.826235Z	    7 Quit	
+2020-04-08T23:34:42.368043Z	    8 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:34:42.369395Z	    8 Query	SET NAMES utf8
+2020-04-08T23:34:42.391242Z	    8 Quit	
+2020-04-08T23:34:50.422528Z	    9 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:34:50.423220Z	    9 Query	SET NAMES utf8
+2020-04-08T23:34:50.451038Z	    9 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-08T23:34:50.451485Z	    9 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-08T23:34:50.452760Z	    9 Close stmt	
+2020-04-08T23:34:50.737996Z	    9 Quit	
+2020-04-08T23:34:50.975424Z	   10 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:34:50.975966Z	   10 Query	SET NAMES utf8
+2020-04-08T23:34:50.997162Z	   10 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:34:50.997440Z	   10 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:34:50.997900Z	   10 Close stmt	
+2020-04-08T23:34:50.998291Z	   10 Quit	
+2020-04-08T23:35:16.611049Z	   11 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:35:16.611852Z	   11 Query	SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db' AND TABLE_TYPE = 'BASE TABLE'
+2020-04-08T23:35:16.615594Z	   11 Quit	
+2020-04-08T23:35:16.617258Z	   12 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:35:16.617873Z	   12 Query	SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db' AND TABLE_TYPE = 'VIEW'
+2020-04-08T23:35:16.619197Z	   12 Quit	
+2020-04-08T23:35:16.644511Z	   13 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:35:16.645254Z	   13 Query	SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'db' AND TABLE_NAME = 'users' ORDER BY TABLE_NAME, ORDINAL_POSITION
+2020-04-08T23:35:16.648192Z	   13 Quit	
+2020-04-08T23:35:53.637659Z	   14 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:35:53.638277Z	   14 Query	SET NAMES utf8
+2020-04-08T23:35:53.666067Z	   14 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:35:53.666392Z	   14 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:35:53.667126Z	   14 Close stmt	
+2020-04-08T23:35:53.667803Z	   14 Quit	
+2020-04-08T23:35:54.634108Z	   15 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:35:54.634807Z	   15 Query	SET NAMES utf8
+2020-04-08T23:35:54.659113Z	   15 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:35:54.659511Z	   15 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:35:54.660046Z	   15 Close stmt	
+2020-04-08T23:35:54.660847Z	   15 Quit	
+2020-04-08T23:36:01.611455Z	   16 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:36:01.612035Z	   16 Query	SET NAMES utf8
+2020-04-08T23:36:01.635130Z	   16 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-08T23:36:01.635404Z	   16 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-08T23:36:01.635899Z	   16 Close stmt	
+2020-04-08T23:36:01.917231Z	   16 Quit	
+2020-04-08T23:36:02.142788Z	   17 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:36:02.143402Z	   17 Query	SET NAMES utf8
+2020-04-08T23:36:02.165986Z	   17 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:36:02.166308Z	   17 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:36:02.166900Z	   17 Close stmt	
+2020-04-08T23:36:02.167371Z	   17 Quit	
+2020-04-08T23:36:14.020882Z	   18 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:36:14.021482Z	   18 Query	SET NAMES utf8
+2020-04-08T23:36:14.048496Z	   18 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:36:14.048974Z	   18 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:36:14.049760Z	   18 Close stmt	
+2020-04-08T23:36:14.050296Z	   18 Quit	
+2020-04-08T23:36:29.253002Z	   19 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:36:29.253713Z	   19 Query	SET NAMES utf8
+2020-04-08T23:36:29.280779Z	   19 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:36:29.281116Z	   19 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:36:29.281633Z	   19 Close stmt	
+2020-04-08T23:36:29.282046Z	   19 Quit	
+2020-04-08T23:36:31.818750Z	   20 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:36:31.819365Z	   20 Query	SET NAMES utf8
+2020-04-08T23:36:31.846734Z	   20 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:36:31.847098Z	   20 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:36:31.848021Z	   20 Close stmt	
+2020-04-08T23:36:31.848612Z	   20 Quit	
+2020-04-08T23:38:19.087370Z	   21 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:38:19.088102Z	   21 Query	SET NAMES utf8
+2020-04-08T23:38:19.113263Z	   21 Quit	
+2020-04-08T23:38:20.887887Z	   22 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:38:20.888401Z	   22 Query	SET NAMES utf8
+2020-04-08T23:38:20.914569Z	   22 Quit	
+2020-04-08T23:38:22.271379Z	   23 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:38:22.271972Z	   23 Query	SET NAMES utf8
+2020-04-08T23:38:22.310121Z	   23 Quit	
+2020-04-08T23:38:33.676743Z	   24 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:38:33.677427Z	   24 Query	SET NAMES utf8
+2020-04-08T23:38:33.694529Z	   24 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-08T23:38:33.694810Z	   24 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-08T23:38:33.695323Z	   24 Close stmt	
+2020-04-08T23:38:33.977496Z	   24 Quit	
+2020-04-08T23:38:34.297747Z	   25 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:38:34.298788Z	   25 Query	SET NAMES utf8
+2020-04-08T23:38:34.333010Z	   25 Quit	
+2020-04-08T23:42:19.855189Z	   26 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:42:19.855843Z	   26 Query	SET NAMES utf8
+2020-04-08T23:42:19.869777Z	   26 Quit	
+2020-04-08T23:42:42.033329Z	   27 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:42:42.033860Z	   27 Query	SET NAMES utf8
+2020-04-08T23:42:42.051204Z	   27 Quit	
+2020-04-08T23:42:55.449360Z	   28 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:42:55.450012Z	   28 Query	SET NAMES utf8
+2020-04-08T23:42:55.479392Z	   28 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:42:55.479733Z	   28 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:42:55.480282Z	   28 Close stmt	
+2020-04-08T23:42:55.480887Z	   28 Quit	
+2020-04-08T23:43:03.571086Z	   29 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:43:03.571679Z	   29 Query	SET NAMES utf8
+2020-04-08T23:43:03.592736Z	   29 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-08T23:43:03.593204Z	   29 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-08T23:43:03.603396Z	   29 Close stmt	
+2020-04-08T23:43:03.876244Z	   29 Quit	
+2020-04-08T23:43:04.107291Z	   30 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:43:04.107932Z	   30 Query	SET NAMES utf8
+2020-04-08T23:43:04.130695Z	   30 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:43:04.131043Z	   30 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:43:04.131572Z	   30 Close stmt	
+2020-04-08T23:43:04.131969Z	   30 Quit	
+2020-04-08T23:43:13.827603Z	   31 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:43:13.828112Z	   31 Query	SET NAMES utf8
+2020-04-08T23:43:13.849011Z	   31 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:43:13.849341Z	   31 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:43:13.849878Z	   31 Close stmt	
+2020-04-08T23:43:13.850337Z	   31 Quit	
+2020-04-08T23:44:54.277399Z	   32 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:44:54.278034Z	   32 Query	SET NAMES utf8
+2020-04-08T23:44:54.291912Z	   32 Quit	
+2020-04-08T23:45:02.376697Z	   33 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:45:02.377261Z	   33 Query	SET NAMES utf8
+2020-04-08T23:45:02.399994Z	   33 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-08T23:45:02.400276Z	   33 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-08T23:45:02.400751Z	   33 Close stmt	
+2020-04-08T23:45:02.687955Z	   33 Quit	
+2020-04-08T23:45:02.843090Z	   34 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:45:02.843585Z	   34 Query	SET NAMES utf8
+2020-04-08T23:45:02.861269Z	   34 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:45:02.861541Z	   34 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:45:02.862059Z	   34 Close stmt	
+2020-04-08T23:45:02.862425Z	   34 Quit	
+2020-04-08T23:45:07.849679Z	   35 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:45:07.850434Z	   35 Query	SET NAMES utf8
+2020-04-08T23:45:07.881181Z	   35 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:45:07.881517Z	   35 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:45:07.882027Z	   35 Close stmt	
+2020-04-08T23:45:07.882514Z	   35 Quit	
+2020-04-08T23:45:32.953251Z	   36 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:45:32.953806Z	   36 Query	SET NAMES utf8
+2020-04-08T23:45:32.979019Z	   36 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:45:32.979374Z	   36 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:45:32.979956Z	   36 Close stmt	
+2020-04-08T23:45:32.980608Z	   36 Quit	
+2020-04-08T23:46:19.655820Z	   37 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:46:19.656394Z	   37 Query	SET NAMES utf8
+2020-04-08T23:46:19.677214Z	   37 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:46:19.677621Z	   37 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:46:19.678208Z	   37 Close stmt	
+2020-04-08T23:46:19.678678Z	   37 Quit	
+2020-04-08T23:46:25.057373Z	   38 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:46:25.057937Z	   38 Query	SET NAMES utf8
+2020-04-08T23:46:25.079261Z	   38 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:46:25.079607Z	   38 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:46:25.080168Z	   38 Close stmt	
+2020-04-08T23:46:25.080565Z	   38 Quit	
+2020-04-08T23:55:41.624151Z	   39 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:55:41.625132Z	   39 Query	SET NAMES utf8
+2020-04-08T23:55:41.656220Z	   39 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:55:41.656662Z	   39 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:55:41.657290Z	   39 Close stmt	
+2020-04-08T23:55:41.657847Z	   39 Quit	
+2020-04-08T23:55:53.276326Z	   40 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:55:53.277031Z	   40 Query	SET NAMES utf8
+2020-04-08T23:55:53.300383Z	   40 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:55:53.300678Z	   40 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:55:53.301160Z	   40 Close stmt	
+2020-04-08T23:55:53.301588Z	   40 Quit	
+2020-04-08T23:56:41.565449Z	   41 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:56:41.565998Z	   41 Query	SET NAMES utf8
+2020-04-08T23:56:41.593089Z	   41 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:56:41.593426Z	   41 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:56:41.594013Z	   41 Close stmt	
+2020-04-08T23:56:41.594466Z	   41 Quit	
+2020-04-08T23:56:56.376541Z	   42 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:56:56.377132Z	   42 Query	SET NAMES utf8
+2020-04-08T23:56:56.402226Z	   42 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:56:56.402686Z	   42 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:56:56.403367Z	   42 Close stmt	
+2020-04-08T23:56:56.403795Z	   42 Quit	
+2020-04-08T23:59:10.954884Z	   43 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:59:10.955563Z	   43 Query	SET NAMES utf8
+2020-04-08T23:59:10.979942Z	   43 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:59:10.980279Z	   43 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:59:10.980785Z	   43 Close stmt	
+2020-04-08T23:59:10.981279Z	   43 Quit	
+2020-04-08T23:59:13.511978Z	   44 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-08T23:59:13.512533Z	   44 Query	SET NAMES utf8
+2020-04-08T23:59:13.534585Z	   44 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-08T23:59:13.534997Z	   44 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-08T23:59:13.535635Z	   44 Close stmt	
+2020-04-08T23:59:13.536086Z	   44 Quit	
+2020-04-09T00:02:45.856003Z	   45 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:02:45.856889Z	   45 Query	SET NAMES utf8
+2020-04-09T00:02:45.883717Z	   45 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:02:45.884035Z	   45 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:02:45.884538Z	   45 Close stmt	
+2020-04-09T00:02:45.885083Z	   45 Quit	
+2020-04-09T00:02:48.317203Z	   46 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:02:48.317823Z	   46 Query	SET NAMES utf8
+2020-04-09T00:02:48.345579Z	   46 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:02:48.346067Z	   46 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:02:48.347116Z	   46 Close stmt	
+2020-04-09T00:02:48.347798Z	   46 Quit	
+2020-04-09T00:03:52.939807Z	   47 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:03:52.940541Z	   47 Query	SET NAMES utf8
+2020-04-09T00:03:52.965112Z	   47 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:03:52.965409Z	   47 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:03:52.965984Z	   47 Close stmt	
+2020-04-09T00:03:52.966398Z	   47 Quit	
+2020-04-09T00:03:58.680208Z	   48 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:03:58.680964Z	   48 Query	SET NAMES utf8
+2020-04-09T00:03:58.703323Z	   48 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:03:58.703683Z	   48 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:03:58.704325Z	   48 Close stmt	
+2020-04-09T00:03:58.704787Z	   48 Quit	
+2020-04-09T00:04:25.613382Z	   49 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:04:25.614083Z	   49 Query	SET NAMES utf8
+2020-04-09T00:04:25.638557Z	   49 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:04:25.638938Z	   49 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:04:25.639669Z	   49 Close stmt	
+2020-04-09T00:04:25.640356Z	   49 Quit	
+2020-04-09T00:07:05.824236Z	   50 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:07:05.825471Z	   50 Query	SET NAMES utf8
+2020-04-09T00:07:05.851496Z	   50 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:07:05.851866Z	   50 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:07:05.852350Z	   50 Close stmt	
+2020-04-09T00:07:05.853005Z	   50 Quit	
+2020-04-09T00:10:23.818806Z	   51 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:10:23.819752Z	   51 Query	SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'db' AND TABLE_NAME = 'users' ORDER BY TABLE_NAME, ORDINAL_POSITION
+2020-04-09T00:10:23.821585Z	   51 Quit	
+2020-04-09T00:11:05.415969Z	   52 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:11:05.416759Z	   52 Query	SET NAMES utf8
+2020-04-09T00:11:05.438356Z	   52 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:11:05.438638Z	   52 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:11:05.439251Z	   52 Close stmt	
+2020-04-09T00:11:05.439617Z	   52 Quit	
+2020-04-09T00:12:17.743538Z	   53 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:12:17.744294Z	   53 Query	SET NAMES utf8
+2020-04-09T00:12:17.759793Z	   53 Quit	
+2020-04-09T00:12:50.464460Z	   54 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:12:50.465270Z	   54 Query	SET NAMES utf8
+2020-04-09T00:12:50.477225Z	   54 Quit	
+2020-04-09T00:12:59.352638Z	   55 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:12:59.353161Z	   55 Query	SET NAMES utf8
+2020-04-09T00:12:59.371682Z	   55 Quit	
+2020-04-09T00:12:59.711150Z	   56 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:12:59.712675Z	   56 Query	SET NAMES utf8
+2020-04-09T00:12:59.747707Z	   56 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:12:59.748040Z	   56 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:12:59.748762Z	   56 Close stmt	
+2020-04-09T00:12:59.749243Z	   56 Quit	
+2020-04-09T00:13:27.602770Z	   57 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:13:27.603330Z	   57 Query	SET NAMES utf8
+2020-04-09T00:13:27.626687Z	   57 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:13:27.626983Z	   57 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:13:27.627591Z	   57 Close stmt	
+2020-04-09T00:13:27.628045Z	   57 Quit	
+2020-04-09T00:13:27.662175Z	   58 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:13:27.662659Z	   58 Query	SET NAMES utf8
+2020-04-09T00:13:27.676169Z	   58 Quit	
+2020-04-09T00:14:14.499355Z	   59 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:14.500892Z	   59 Query	SET NAMES utf8
+2020-04-09T00:14:14.532288Z	   59 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:14:14.532637Z	   59 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:14:14.533277Z	   59 Close stmt	
+2020-04-09T00:14:14.534133Z	   59 Quit	
+2020-04-09T00:14:14.552409Z	   60 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:14.552917Z	   60 Query	SET NAMES utf8
+2020-04-09T00:14:14.568839Z	   60 Quit	
+2020-04-09T00:14:25.332596Z	   61 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:25.333142Z	   61 Query	SET NAMES utf8
+2020-04-09T00:14:25.360277Z	   61 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:14:25.360633Z	   61 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:14:25.361375Z	   61 Close stmt	
+2020-04-09T00:14:25.361917Z	   61 Quit	
+2020-04-09T00:14:34.748732Z	   62 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:34.749360Z	   62 Query	SET NAMES utf8
+2020-04-09T00:14:34.766561Z	   62 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T00:14:34.766835Z	   62 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T00:14:34.767277Z	   62 Close stmt	
+2020-04-09T00:14:35.049514Z	   62 Quit	
+2020-04-09T00:14:35.279146Z	   63 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:35.279996Z	   63 Query	SET NAMES utf8
+2020-04-09T00:14:35.308980Z	   63 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:14:35.309258Z	   63 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:14:35.309906Z	   63 Close stmt	
+2020-04-09T00:14:35.310465Z	   63 Quit	
+2020-04-09T00:14:42.618111Z	   64 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:42.619214Z	   64 Query	SET NAMES utf8
+2020-04-09T00:14:42.635758Z	   64 Quit	
+2020-04-09T00:14:42.828479Z	   65 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:14:42.829036Z	   65 Query	SET NAMES utf8
+2020-04-09T00:14:42.851752Z	   65 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:14:42.852192Z	   65 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:14:42.852685Z	   65 Close stmt	
+2020-04-09T00:14:42.853338Z	   65 Quit	
+2020-04-09T00:16:54.711582Z	   66 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:16:54.712689Z	   66 Query	SET NAMES utf8
+2020-04-09T00:16:54.738091Z	   66 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:16:54.738482Z	   66 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:16:54.739066Z	   66 Close stmt	
+2020-04-09T00:16:54.739576Z	   66 Quit	
+2020-04-09T00:16:56.267941Z	   67 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:16:56.268565Z	   67 Query	SET NAMES utf8
+2020-04-09T00:16:56.288429Z	   67 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:16:56.288764Z	   67 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:16:56.289267Z	   67 Close stmt	
+2020-04-09T00:16:56.289791Z	   67 Quit	
+2020-04-09T00:17:03.468482Z	   68 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:17:03.469074Z	   68 Query	SET NAMES utf8
+2020-04-09T00:17:03.491829Z	   68 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T00:17:03.492113Z	   68 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T00:17:03.492806Z	   68 Close stmt	
+2020-04-09T00:17:03.778145Z	   68 Quit	
+2020-04-09T00:17:03.883120Z	   69 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:17:03.883853Z	   69 Query	SET NAMES utf8
+2020-04-09T00:17:03.902889Z	   69 Quit	
+2020-04-09T00:17:04.097068Z	   70 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:17:04.097665Z	   70 Query	SET NAMES utf8
+2020-04-09T00:17:04.119856Z	   70 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:17:04.120154Z	   70 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:17:04.120671Z	   70 Close stmt	
+2020-04-09T00:17:04.121032Z	   70 Quit	
+2020-04-09T00:26:52.033381Z	   71 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:26:52.033983Z	   71 Query	SET NAMES utf8
+2020-04-09T00:26:52.054622Z	   71 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:26:52.054904Z	   71 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:26:52.055399Z	   71 Close stmt	
+2020-04-09T00:26:52.055733Z	   71 Quit	
+2020-04-09T00:28:06.653097Z	   72 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:28:06.654108Z	   72 Query	SET NAMES utf8
+2020-04-09T00:28:06.687233Z	   72 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:28:06.687556Z	   72 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:28:06.688031Z	   72 Close stmt	
+2020-04-09T00:28:06.688581Z	   72 Quit	
+2020-04-09T00:30:26.018441Z	   73 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:30:26.019410Z	   73 Query	SET NAMES utf8
+2020-04-09T00:30:26.043251Z	   73 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:30:26.043739Z	   73 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:30:26.044247Z	   73 Close stmt	
+2020-04-09T00:30:26.044931Z	   73 Quit	
+2020-04-09T00:31:01.903842Z	   74 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:31:01.904483Z	   74 Query	SET NAMES utf8
+2020-04-09T00:31:02.749548Z	   74 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T00:31:02.749870Z	   74 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('newuser', '$argon2id$v=19$m=65536,t=4,p=1$M2JHS0F2WTZMWjRtb2RXQw$aGQwxnH55BQbUDTNhhyc8w1LnEeNfzIfcbvP/WoL/Zc', 'user@user.com')
+2020-04-09T00:31:02.752790Z	   74 Close stmt	
+2020-04-09T00:31:02.753482Z	   74 Quit	
+2020-04-09T00:31:15.618156Z	   75 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:31:15.618989Z	   75 Query	SET NAMES utf8
+2020-04-09T00:31:16.460357Z	   75 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T00:31:16.460639Z	   75 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('newuser', '$argon2id$v=19$m=65536,t=4,p=1$VEh3WVZldzdyaUNVZnZmcQ$i9/5ZN5R9c+TVDeUhEX1o+qDknDapegFXW8d6ekN38k', 'user@user.com')
+2020-04-09T00:31:16.463803Z	   75 Close stmt	
+2020-04-09T00:31:16.464248Z	   75 Quit	
+2020-04-09T00:35:41.267263Z	   76 Connect	db_user@172.20.0.1 on  using SSL/TLS
+2020-04-09T00:35:41.269525Z	   76 Query	set autocommit=1
+2020-04-09T00:35:41.271383Z	   76 Query	SHOW SESSION VARIABLES LIKE 'lower_case_table_names'
+2020-04-09T00:35:41.276681Z	   76 Query	SELECT current_user()
+2020-04-09T00:35:41.312100Z	   76 Query	SET CHARACTER SET utf8
+2020-04-09T00:35:41.313601Z	   76 Query	SET NAMES utf8
+2020-04-09T00:35:41.315346Z	   76 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2020-04-09T00:35:41.318216Z	   76 Query	SELECT CONNECTION_ID()
+2020-04-09T00:35:41.358539Z	   76 Query	show character set where charset = 'utf8mb4'
+2020-04-09T00:35:41.360948Z	   76 Query	SET NAMES 'utf8mb4'
+2020-04-09T00:35:41.397654Z	   76 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2020-04-09T00:35:41.400414Z	   76 Query	USE `db`
+2020-04-09T00:35:41.448874Z	   76 Query	set autocommit=1
+2020-04-09T00:35:41.458211Z	   77 Connect	db_user@172.20.0.1 on  using SSL/TLS
+2020-04-09T00:35:41.459835Z	   77 Query	set autocommit=1
+2020-04-09T00:35:41.461883Z	   77 Query	SHOW SESSION VARIABLES LIKE 'lower_case_table_names'
+2020-04-09T00:35:41.466318Z	   77 Query	SELECT current_user()
+2020-04-09T00:35:41.468159Z	   77 Query	SET CHARACTER SET utf8
+2020-04-09T00:35:41.469925Z	   77 Query	SET NAMES utf8
+2020-04-09T00:35:41.471629Z	   77 Query	SET SQL_SAFE_UPDATES=1
+2020-04-09T00:35:41.473203Z	   77 Query	SELECT CONNECTION_ID()
+2020-04-09T00:35:41.475034Z	   77 Query	show character set where charset = 'utf8mb4'
+2020-04-09T00:35:41.477123Z	   77 Query	SET NAMES 'utf8mb4'
+2020-04-09T00:35:41.478914Z	   77 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2020-04-09T00:35:41.481698Z	   77 Query	USE `db`
+2020-04-09T00:35:41.483461Z	   77 Query	set autocommit=1
+2020-04-09T00:35:41.485191Z	   77 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2020-04-09T00:35:41.488149Z	   77 Query	SHOW SESSION VARIABLES LIKE 'version_comment'
+2020-04-09T00:35:41.490773Z	   77 Query	SHOW SESSION VARIABLES LIKE 'version'
+2020-04-09T00:35:41.495083Z	   77 Query	SELECT current_user()
+2020-04-09T00:35:41.496956Z	   77 Query	SHOW SESSION VARIABLES LIKE 'lower_case_table_names'
+2020-04-09T00:35:42.669152Z	   76 Query	SHOW DATABASES
+2020-04-09T00:35:42.698527Z	   77 Query	show engines
+2020-04-09T00:35:42.763313Z	   77 Query	show charset
+2020-04-09T00:35:42.765951Z	   77 Query	show collation
+2020-04-09T00:35:42.770303Z	   77 Query	show variables
+2020-04-09T00:35:42.773843Z	   77 Query	SHOW SESSION VARIABLES LIKE 'version_compile_os'
+2020-04-09T00:35:42.776441Z	   77 Query	SHOW SESSION VARIABLES LIKE 'offline_mode'
+2020-04-09T00:35:43.160034Z	   77 Query	SHOW SESSION VARIABLES LIKE 'wait_timeout'
+2020-04-09T00:35:43.162470Z	   77 Query	SHOW SESSION VARIABLES LIKE 'interactive_timeout'
+2020-04-09T00:35:46.548406Z	   76 Query	SHOW FULL TABLES FROM `db`
+2020-04-09T00:35:46.551554Z	   76 Query	SHOW PROCEDURE STATUS WHERE Db='db'
+2020-04-09T00:35:46.562119Z	   76 Query	SHOW FUNCTION STATUS WHERE Db='db'
+2020-04-09T00:35:46.566819Z	   77 Query	SHOW FULL COLUMNS FROM `db`.`users`
+2020-04-09T00:36:37.182252Z	   77 Query	SELECT * FROM users
+-- TRUNCATE TABLE users;
+LIMIT 0, 1000
+2020-04-09T00:36:37.231906Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T00:36:37.398830Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T00:36:37.401454Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T00:36:37.542919Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T00:40:04.332675Z	   78 Connect	db_user@172.20.0.1 on  using SSL/TLS
+2020-04-09T00:40:04.334550Z	   78 Query	set autocommit=1
+2020-04-09T00:40:04.335773Z	   78 Query	SHOW SESSION VARIABLES LIKE 'lower_case_table_names'
+2020-04-09T00:40:04.339212Z	   78 Query	SELECT current_user()
+2020-04-09T00:40:04.340331Z	   78 Query	show character set where charset = 'utf8mb4'
+2020-04-09T00:40:04.341838Z	   78 Query	SET NAMES 'utf8mb4'
+2020-04-09T00:40:04.343784Z	   78 Query	SHOW VARIABLES
+2020-04-09T00:40:04.377417Z	   78 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:04.385678Z	   78 Query	SHOW PLUGINS
+2020-04-09T00:40:04.394867Z	   79 Connect	db_user@172.20.0.1 on  using SSL/TLS
+2020-04-09T00:40:04.396400Z	   79 Query	set autocommit=1
+2020-04-09T00:40:04.397865Z	   79 Query	SHOW SESSION VARIABLES LIKE 'lower_case_table_names'
+2020-04-09T00:40:04.403322Z	   79 Query	SELECT current_user()
+2020-04-09T00:40:04.405135Z	   79 Query	show character set where charset = 'utf8mb4'
+2020-04-09T00:40:04.407150Z	   79 Query	SET NAMES 'utf8mb4'
+2020-04-09T00:40:04.560080Z	   78 Query	DESCRIBE mysql.db
+2020-04-09T00:40:07.467335Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:08.195109Z	   78 Query	SHOW SLAVE STATUS
+2020-04-09T00:40:10.480350Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:13.497361Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:16.515632Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:19.534407Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:19.936487Z	   76 Query	SHOW FULL COLUMNS FROM `db`.`users`
+2020-04-09T00:40:19.984595Z	   76 Query	SHOW INDEXES FROM `db`.`users`
+2020-04-09T00:40:22.553857Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:25.568970Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:26.865732Z	   77 Query	SELECT * FROM db.users
+LIMIT 0, 1000
+2020-04-09T00:40:26.874810Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T00:40:26.877915Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T00:40:26.880182Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T00:40:26.881958Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T00:40:28.585917Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:30.855800Z	   76 Query	show columns from `mysql`.`tables_priv` like 'table_priv'
+2020-04-09T00:40:31.006999Z	   76 Query	show columns from `mysql`.`columns_priv` like 'Column_priv'
+2020-04-09T00:40:31.128904Z	   76 Query	select * from information_schema.tables WHERE table_schema = 'db' AND table_name = 'users'
+2020-04-09T00:40:31.212992Z	   76 Query	select count(*) column_count from information_schema.columns WHERE table_schema = 'db' and table_name = 'users'
+2020-04-09T00:40:31.215941Z	   76 Query	SELECT @@datadir datadir,sd.path FROM information_schema.INNODB_TABLES st JOIN information_schema.innodb_datafiles sd USING(space) WHERE st.name = 'db/users'
+2020-04-09T00:40:31.250147Z	   76 Query	select `COLUMN_NAME`, `COLUMN_TYPE`, `COLUMN_DEFAULT`, `IS_NULLABLE`, `CHARACTER_SET_NAME`, `COLLATION_NAME`, `PRIVILEGES`, `EXTRA`, `COLUMN_COMMENT` from information_schema.columns where table_schema = 'db' and table_name = 'users'
+2020-04-09T00:40:31.280448Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T00:40:31.312012Z	   76 Query	SHOW COLUMNS FROM `db`.`users`
+2020-04-09T00:40:31.315774Z	   76 Query	show triggers from `db` like 'users'
+2020-04-09T00:40:31.319266Z	   76 Query	select `constraint_name`, `constraint_schema`, `table_name`, `column_name`, `referenced_table_schema`, `referenced_table_name`, `referenced_column_name`                     FROM information_schema.KEY_COLUMN_USAGE                     WHERE ((REFERENCED_TABLE_SCHEMA = 'db' AND referenced_table_name = 'users') OR (TABLE_SCHEMA='db' and table_name = 'users')) AND                     REFERENCED_TABLE_NAME is not null ORDER BY TABLE_NAME, COLUMN_NAME
+2020-04-09T00:40:31.329491Z	   76 Query	select `partition_name`, `subpartition_name`, `partition_ordinal_position`, `subpartition_ordinal_position`, `partition_method`, `subpartition_method`, `partition_expression`, `subpartition_expression`, `partition_description`, `table_rows`, `avg_row_length`, `data_length`, `max_data_length`, `index_length`, `create_time`, `update_time`, `check_time`                     FROM information_schema.partitions                     WHERE TABLE_SCHEMA = 'db' AND TABLE_NAME = 'users' AND PARTITION_NAME IS NOT NULL ORDER BY PARTITION_NAME
+2020-04-09T00:40:31.333535Z	   76 Query	show create table `db`.`users`
+2020-04-09T00:40:31.605684Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:34.621376Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:37.638249Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:40.657250Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:43.671664Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:46.689888Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:49.709941Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:52.724646Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:55.739744Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:40:58.758553Z	   79 Query	SHOW GLOBAL STATUS
+2020-04-09T00:41:01.776109Z	   79 Quit	
+2020-04-09T00:41:01.876475Z	   78 Quit	
+2020-04-09T00:41:04.026037Z	   76 Query	SHOW TRIGGERS FROM `db` WHERE `Table` = 'users'
+2020-04-09T00:41:04.028403Z	   76 Query	SHOW CREATE TABLE `db`.`users`
+2020-04-09T00:41:04.030734Z	   76 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2020-04-09T00:41:04.972932Z	   76 Query	SHOW DATABASES LIKE '%db'
+2020-04-09T00:41:04.974896Z	   76 Query	SHOW FULL TABLES FROM `db` LIKE '%'
+2020-04-09T00:41:05.360047Z	   76 Query	SHOW TRIGGERS FROM `db` WHERE `Table` = 'users'
+2020-04-09T00:41:05.362196Z	   76 Query	SHOW CREATE TABLE `db`.`users`
+2020-04-09T00:41:05.364650Z	   76 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2020-04-09T00:41:05.468102Z	   76 Query	SHOW DATABASES LIKE '%db'
+2020-04-09T00:41:05.470040Z	   76 Query	SHOW FULL TABLES FROM `db` LIKE '%'
+2020-04-09T00:41:47.126043Z	   77 Query	ALTER TABLE `db`.`users` 
+ADD UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
+ADD UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE
+2020-04-09T00:56:38.867970Z	   80 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:56:38.868476Z	   80 Query	SET NAMES utf8
+2020-04-09T00:56:38.891139Z	   80 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T00:56:38.891407Z	   80 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T00:56:38.891967Z	   80 Close stmt	
+2020-04-09T00:56:39.165153Z	   80 Quit	
+2020-04-09T00:56:56.382439Z	   81 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:56:56.382939Z	   81 Query	SET NAMES utf8
+2020-04-09T00:56:56.405559Z	   81 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T00:56:56.405856Z	   81 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T00:56:56.406349Z	   81 Close stmt	
+2020-04-09T00:56:56.686978Z	   81 Quit	
+2020-04-09T00:57:36.169169Z	   82 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:57:36.169777Z	   82 Query	SET NAMES utf8
+2020-04-09T00:57:36.187714Z	   82 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T00:57:36.188032Z	   82 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T00:57:36.188558Z	   82 Close stmt	
+2020-04-09T00:57:36.451999Z	   82 Quit	
+2020-04-09T00:57:45.563573Z	   83 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:57:45.564105Z	   83 Query	SET NAMES utf8
+2020-04-09T00:57:45.580714Z	   83 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T00:57:45.581039Z	   83 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T00:57:45.581549Z	   83 Close stmt	
+2020-04-09T00:57:45.861135Z	   83 Quit	
+2020-04-09T00:57:45.938607Z	   84 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:57:45.939236Z	   84 Query	SET NAMES utf8
+2020-04-09T00:57:45.952363Z	   84 Quit	
+2020-04-09T00:57:46.155377Z	   85 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:57:46.155924Z	   85 Query	SET NAMES utf8
+2020-04-09T00:57:46.174249Z	   85 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:57:46.174494Z	   85 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:57:46.174957Z	   85 Close stmt	
+2020-04-09T00:57:46.175258Z	   85 Quit	
+2020-04-09T00:57:50.275752Z	   86 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:57:50.276435Z	   86 Query	SET NAMES utf8
+2020-04-09T00:57:50.295748Z	   86 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T00:57:50.296035Z	   86 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T00:57:50.296610Z	   86 Close stmt	
+2020-04-09T00:57:50.296996Z	   86 Quit	
+2020-04-09T00:58:04.294437Z	   87 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T00:58:04.294940Z	   87 Query	SET NAMES utf8
+2020-04-09T00:58:05.146175Z	   87 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T00:58:05.146449Z	   87 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('hello', '$argon2id$v=19$m=65536,t=4,p=1$UlZONEgxOFZaU2ZGWHF6MQ$+Xn8v2UymtLt1BEL1o76ty50Td+21rFmpVzD/GfLcfY', 'hello')
+2020-04-09T00:58:05.149515Z	   87 Close stmt	
+2020-04-09T00:58:05.149943Z	   87 Quit	
+2020-04-09T00:58:16.608747Z	   77 Query	SELECT * FROM db.users
+LIMIT 0, 1000
+2020-04-09T00:58:16.616413Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T00:58:16.619919Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T00:58:16.622983Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T00:58:16.625235Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T01:01:01.282558Z	   88 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:01:01.283088Z	   88 Query	SET NAMES utf8
+2020-04-09T01:01:02.124499Z	   88 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:01:02.124826Z	   88 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('yeah', '$argon2id$v=19$m=65536,t=4,p=1$Z0NLN1pvdG01N1RDMUgvcw$TZMYDhTquDX2bvALHIWgnFcvwHUUEYq+8ENAzFMpCAk', 'yeah@yeah.com')
+2020-04-09T01:01:02.128244Z	   88 Close stmt	
+2020-04-09T01:01:02.128756Z	   88 Quit	
+2020-04-09T01:09:36.686649Z	   89 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:09:36.687387Z	   89 Query	SET NAMES utf8
+2020-04-09T01:09:36.701459Z	   89 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:09:36.701736Z	   89 Execute	SELECT * FROM `users` WHERE `username` = 'yeah' LIMIT 1
+2020-04-09T01:09:36.702222Z	   89 Close stmt	
+2020-04-09T01:09:36.702610Z	   89 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:09:36.702842Z	   89 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:09:36.703244Z	   89 Close stmt	
+2020-04-09T01:09:36.703545Z	   89 Quit	
+2020-04-09T01:09:52.983942Z	   77 Query	SELECT * FROM db.users
+LIMIT 0, 1000
+2020-04-09T01:09:52.992763Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T01:09:52.996777Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T01:09:52.999746Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T01:09:53.002010Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T01:09:56.273166Z	   77 Query	SELECT * FROM db.users
+LIMIT 0, 1000
+2020-04-09T01:09:56.281538Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T01:09:56.285349Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T01:09:56.288715Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T01:09:56.291226Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T01:10:02.975293Z	   90 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:10:02.975788Z	   90 Query	SET NAMES utf8
+2020-04-09T01:10:02.993398Z	   90 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:10:02.993683Z	   90 Execute	SELECT * FROM `users` WHERE `username` = 'yeah' LIMIT 1
+2020-04-09T01:10:02.994170Z	   90 Close stmt	
+2020-04-09T01:10:02.994545Z	   90 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:10:02.994802Z	   90 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:10:02.995169Z	   90 Close stmt	
+2020-04-09T01:10:02.995565Z	   90 Quit	
+2020-04-09T01:12:07.503248Z	   91 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:12:07.504215Z	   91 Query	SET NAMES utf8
+2020-04-09T01:12:07.519357Z	   91 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:12:07.519627Z	   91 Execute	SELECT * FROM `users` WHERE `username` = 'oweir' LIMIT 1
+2020-04-09T01:12:07.520208Z	   91 Close stmt	
+2020-04-09T01:12:07.520630Z	   91 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:12:07.520879Z	   91 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:12:07.521315Z	   91 Close stmt	
+2020-04-09T01:12:07.521812Z	   91 Quit	
+2020-04-09T01:12:36.167004Z	   92 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:12:36.167751Z	   92 Query	SET NAMES utf8
+2020-04-09T01:12:36.184214Z	   92 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:12:36.184559Z	   92 Execute	SELECT * FROM `users` WHERE `username` = 'adofi' LIMIT 1
+2020-04-09T01:12:36.185152Z	   92 Close stmt	
+2020-04-09T01:12:36.185518Z	   92 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:12:36.185882Z	   92 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:12:36.186354Z	   92 Close stmt	
+2020-04-09T01:12:36.186839Z	   92 Quit	
+2020-04-09T01:15:18.431949Z	   93 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:15:18.433173Z	   93 Query	SET NAMES utf8
+2020-04-09T01:15:18.447463Z	   93 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:15:18.447764Z	   93 Execute	SELECT * FROM `users` WHERE `username` = 'iqreuo' LIMIT 1
+2020-04-09T01:15:18.448176Z	   93 Close stmt	
+2020-04-09T01:15:18.448465Z	   93 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:15:18.448657Z	   93 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:15:18.449030Z	   93 Close stmt	
+2020-04-09T01:15:18.449494Z	   93 Quit	
+2020-04-09T01:16:42.449419Z	   94 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:16:42.450234Z	   94 Query	SET NAMES utf8
+2020-04-09T01:16:42.473220Z	   94 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:16:42.473631Z	   94 Execute	SELECT * FROM `users` WHERE `username` = 'adjflk' LIMIT 1
+2020-04-09T01:16:42.474316Z	   94 Close stmt	
+2020-04-09T01:16:42.474770Z	   94 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:16:42.475148Z	   94 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:16:42.475826Z	   94 Close stmt	
+2020-04-09T01:16:42.476271Z	   94 Quit	
+2020-04-09T01:17:49.762413Z	   95 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:17:49.762883Z	   95 Query	SET NAMES utf8
+2020-04-09T01:17:49.777057Z	   95 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:17:49.777335Z	   95 Execute	SELECT * FROM `users` WHERE `username` = 'akdjf' LIMIT 1
+2020-04-09T01:17:49.777854Z	   95 Close stmt	
+2020-04-09T01:17:49.778208Z	   95 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:17:49.778600Z	   95 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:17:49.779146Z	   95 Close stmt	
+2020-04-09T01:17:49.779549Z	   95 Quit	
+2020-04-09T01:23:04.107898Z	   96 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:23:04.108711Z	   96 Query	SET NAMES utf8
+2020-04-09T01:23:04.127165Z	   96 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:23:04.130685Z	   96 Execute	SELECT * FROM `users` WHERE `username` = 'adfj' LIMIT 1
+2020-04-09T01:23:04.131222Z	   96 Close stmt	
+2020-04-09T01:23:04.131560Z	   96 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:23:04.131819Z	   96 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:23:04.132289Z	   96 Close stmt	
+2020-04-09T01:23:04.132904Z	   96 Quit	
+2020-04-09T01:23:20.097551Z	   97 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:23:20.098170Z	   97 Query	SET NAMES utf8
+2020-04-09T01:23:20.124592Z	   97 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:23:20.125065Z	   97 Execute	SELECT * FROM `users` WHERE `username` = 'admin' LIMIT 1
+2020-04-09T01:23:20.125708Z	   97 Close stmt	
+2020-04-09T01:23:20.126159Z	   97 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:23:20.126526Z	   97 Execute	SELECT * FROM `users` WHERE `email` = 'pupup@email.com' LIMIT 1
+2020-04-09T01:23:20.127028Z	   97 Close stmt	
+2020-04-09T01:23:20.127700Z	   97 Quit	
+2020-04-09T01:23:57.317577Z	   98 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:23:57.318093Z	   98 Query	SET NAMES utf8
+2020-04-09T01:23:57.330561Z	   98 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:23:57.330824Z	   98 Execute	SELECT * FROM `users` WHERE `username` = 'adkjfl' LIMIT 1
+2020-04-09T01:23:57.331298Z	   98 Close stmt	
+2020-04-09T01:23:57.331656Z	   98 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:23:57.331890Z	   98 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T01:23:57.332333Z	   98 Close stmt	
+2020-04-09T01:23:57.332681Z	   98 Quit	
+2020-04-09T01:24:10.544899Z	   99 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:24:10.545510Z	   99 Query	SET NAMES utf8
+2020-04-09T01:24:10.559624Z	   99 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:24:10.559890Z	   99 Execute	SELECT * FROM `users` WHERE `username` = 'admin' LIMIT 1
+2020-04-09T01:24:10.560353Z	   99 Close stmt	
+2020-04-09T01:24:10.560695Z	   99 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:24:10.560954Z	   99 Execute	SELECT * FROM `users` WHERE `email` = 'pupup@email.com' LIMIT 1
+2020-04-09T01:24:10.561335Z	   99 Close stmt	
+2020-04-09T01:24:10.561670Z	   99 Quit	
+2020-04-09T01:25:59.044622Z	  100 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:25:59.045169Z	  100 Query	SET NAMES utf8
+2020-04-09T01:25:59.057711Z	  100 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:25:59.058084Z	  100 Execute	SELECT * FROM `users` WHERE `username` = 'admin' LIMIT 1
+2020-04-09T01:25:59.058584Z	  100 Close stmt	
+2020-04-09T01:25:59.058965Z	  100 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:25:59.059228Z	  100 Execute	SELECT * FROM `users` WHERE `email` = 'pupup@email.com' LIMIT 1
+2020-04-09T01:25:59.059859Z	  100 Close stmt	
+2020-04-09T01:25:59.060209Z	  100 Quit	
+2020-04-09T01:35:11.650634Z	  101 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:35:11.651397Z	  101 Query	SET NAMES utf8
+2020-04-09T01:35:11.666122Z	  101 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:35:11.666398Z	  101 Execute	SELECT * FROM `users` WHERE `username` = 'pupeup' LIMIT 1
+2020-04-09T01:35:11.666854Z	  101 Close stmt	
+2020-04-09T01:35:11.667203Z	  101 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:35:11.667469Z	  101 Execute	SELECT * FROM `users` WHERE `email` = 'pupup@email.com' LIMIT 1
+2020-04-09T01:35:11.667921Z	  101 Close stmt	
+2020-04-09T01:35:12.508921Z	  101 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:35:12.509624Z	  101 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('pupeup', '$argon2id$v=19$m=65536,t=4,p=1$MFRGOG1vSU1xdG50R0dIVA$aQK6l037dQ3NK4WlG1xNnPoWZWTlcUItQ1mte8id/ZM', 'pupup@email.com')
+2020-04-09T01:35:12.517151Z	  101 Close stmt	
+2020-04-09T01:35:12.518692Z	  101 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:35:12.519475Z	  101 Execute	SELECT * FROM `users` WHERE (`userid` = '6')
+2020-04-09T01:35:12.520610Z	  101 Close stmt	
+2020-04-09T01:35:12.547865Z	  101 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:35:12.548381Z	  101 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'pupeup'
+2020-04-09T01:35:12.548860Z	  101 Close stmt	
+2020-04-09T01:35:12.828780Z	  101 Quit	
+2020-04-09T01:35:27.075620Z	  102 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:35:27.076288Z	  102 Query	SET NAMES utf8
+2020-04-09T01:35:27.091607Z	  102 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:35:27.091934Z	  102 Execute	SELECT * FROM `users` WHERE `username` = 'apple' LIMIT 1
+2020-04-09T01:35:27.092457Z	  102 Close stmt	
+2020-04-09T01:35:27.092764Z	  102 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:35:27.093053Z	  102 Execute	SELECT * FROM `users` WHERE `email` = 'apple@email.com' LIMIT 1
+2020-04-09T01:35:27.093467Z	  102 Close stmt	
+2020-04-09T01:35:27.932322Z	  102 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:35:27.932802Z	  102 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('apple', '$argon2id$v=19$m=65536,t=4,p=1$bC9NNTNMU3BTWDB5Q1BITQ$MoI2+Xp48U3LhFuwFk9oJJ6L45CMnUnWe5XI6opaOWY', 'apple@email.com')
+2020-04-09T01:35:27.936563Z	  102 Close stmt	
+2020-04-09T01:35:27.937169Z	  102 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:35:27.937583Z	  102 Execute	SELECT * FROM `users` WHERE (`userid` = '7')
+2020-04-09T01:35:27.938159Z	  102 Close stmt	
+2020-04-09T01:35:27.957021Z	  102 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:35:27.957383Z	  102 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'apple'
+2020-04-09T01:35:27.958015Z	  102 Close stmt	
+2020-04-09T01:35:28.233175Z	  102 Quit	
+2020-04-09T01:35:29.031298Z	  103 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:35:29.032031Z	  103 Query	SET NAMES utf8
+2020-04-09T01:35:29.048314Z	  103 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:35:29.048645Z	  103 Execute	SELECT * FROM `users` WHERE `username` = 'apple' LIMIT 1
+2020-04-09T01:35:29.049184Z	  103 Close stmt	
+2020-04-09T01:35:29.049581Z	  103 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:35:29.049886Z	  103 Execute	SELECT * FROM `users` WHERE `email` = 'apple@email.com' LIMIT 1
+2020-04-09T01:35:29.050403Z	  103 Close stmt	
+2020-04-09T01:35:29.050791Z	  103 Quit	
+2020-04-09T01:35:36.522804Z	  104 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:35:36.523377Z	  104 Query	SET NAMES utf8
+2020-04-09T01:35:36.539443Z	  104 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:35:36.539777Z	  104 Execute	SELECT * FROM `users` WHERE `username` = 'yeye' LIMIT 1
+2020-04-09T01:35:36.540466Z	  104 Close stmt	
+2020-04-09T01:35:36.541063Z	  104 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:35:36.541464Z	  104 Execute	SELECT * FROM `users` WHERE `email` = 'apple@email.com' LIMIT 1
+2020-04-09T01:35:36.541968Z	  104 Close stmt	
+2020-04-09T01:35:36.542561Z	  104 Quit	
+2020-04-09T01:35:56.011231Z	  105 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:35:56.012052Z	  105 Query	SET NAMES utf8
+2020-04-09T01:35:56.028400Z	  105 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:35:56.028803Z	  105 Execute	SELECT * FROM `users` WHERE `username` = 'yeye' LIMIT 1
+2020-04-09T01:35:56.029298Z	  105 Close stmt	
+2020-04-09T01:35:56.029762Z	  105 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:35:56.030026Z	  105 Execute	SELECT * FROM `users` WHERE `email` = 'apple@email.com' LIMIT 1
+2020-04-09T01:35:56.030549Z	  105 Close stmt	
+2020-04-09T01:35:56.031580Z	  105 Quit	
+2020-04-09T01:36:15.029754Z	  106 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:36:15.030417Z	  106 Query	SET NAMES utf8
+2020-04-09T01:36:15.047140Z	  106 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:36:15.047790Z	  106 Execute	SELECT * FROM `users` WHERE `username` = 'bunn' LIMIT 1
+2020-04-09T01:36:15.048385Z	  106 Close stmt	
+2020-04-09T01:36:15.048801Z	  106 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:36:15.049039Z	  106 Execute	SELECT * FROM `users` WHERE `email` = 'bunn@email.com' LIMIT 1
+2020-04-09T01:36:15.049441Z	  106 Close stmt	
+2020-04-09T01:36:15.902565Z	  106 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:36:15.902985Z	  106 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('bunn', '$argon2id$v=19$m=65536,t=4,p=1$aXpvQmhDaGJJcGZwMU43MQ$N9pY0jN5BBZa0UhSPlDg+j1o+JloqGE+ZplMkI1G6nU', 'bunn@email.com')
+2020-04-09T01:36:15.906352Z	  106 Close stmt	
+2020-04-09T01:36:15.906982Z	  106 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:36:15.907359Z	  106 Execute	SELECT * FROM `users` WHERE (`userid` = '8')
+2020-04-09T01:36:15.908214Z	  106 Close stmt	
+2020-04-09T01:36:15.925442Z	  106 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:36:15.925736Z	  106 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'bunn'
+2020-04-09T01:36:15.926162Z	  106 Close stmt	
+2020-04-09T01:36:16.207862Z	  106 Quit	
+2020-04-09T01:37:06.946203Z	  107 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:37:06.946870Z	  107 Query	SET NAMES utf8
+2020-04-09T01:37:06.963756Z	  107 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:37:06.964111Z	  107 Execute	SELECT * FROM `users` WHERE `username` = 'babe' LIMIT 1
+2020-04-09T01:37:06.964693Z	  107 Close stmt	
+2020-04-09T01:37:06.965207Z	  107 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:37:06.965531Z	  107 Execute	SELECT * FROM `users` WHERE `email` = 'babe@email.com' LIMIT 1
+2020-04-09T01:37:06.966025Z	  107 Close stmt	
+2020-04-09T01:37:07.803231Z	  107 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:37:07.803837Z	  107 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('babe', '$argon2id$v=19$m=65536,t=4,p=1$RFB3OHdJQVJ0WWdWUzFzZA$LYrsxX72XL3S0U5HbfDf2QH4mC63l0KmgubjlNVo5yM', 'babe@email.com')
+2020-04-09T01:37:07.807575Z	  107 Close stmt	
+2020-04-09T01:37:07.808148Z	  107 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:37:07.808752Z	  107 Execute	SELECT * FROM `users` WHERE (`userid` = '9')
+2020-04-09T01:37:07.809261Z	  107 Close stmt	
+2020-04-09T01:37:07.827870Z	  107 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:37:07.828184Z	  107 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'babe'
+2020-04-09T01:37:07.828668Z	  107 Close stmt	
+2020-04-09T01:37:08.106382Z	  107 Quit	
+2020-04-09T01:37:21.015937Z	   77 Query	SELECT * FROM db.users
+LIMIT 0, 1000
+2020-04-09T01:37:21.022828Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T01:37:21.025989Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T01:37:21.029204Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T01:37:21.031614Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T01:41:27.365402Z	  108 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:41:27.366205Z	  108 Query	SET NAMES utf8
+2020-04-09T01:41:27.380461Z	  108 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:41:27.380743Z	  108 Execute	SELECT * FROM `users` WHERE `username` = 'boo' LIMIT 1
+2020-04-09T01:41:27.381248Z	  108 Close stmt	
+2020-04-09T01:41:27.381688Z	  108 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:41:27.381916Z	  108 Execute	SELECT * FROM `users` WHERE `email` = 'boo@rmail.com' LIMIT 1
+2020-04-09T01:41:27.382319Z	  108 Close stmt	
+2020-04-09T01:41:28.224858Z	  108 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:41:28.225389Z	  108 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('boo', '$argon2id$v=19$m=65536,t=4,p=1$bVpYYjRvcWVHbmtzSzNPYQ$7r9QidRSMM/2q2Iah7bCPQ46jq12heDgveESWGNAxuk', 'boo@rmail.com')
+2020-04-09T01:41:28.228670Z	  108 Close stmt	
+2020-04-09T01:41:28.229150Z	  108 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:41:28.229451Z	  108 Execute	SELECT * FROM `users` WHERE (`userid` = '10')
+2020-04-09T01:41:28.229968Z	  108 Close stmt	
+2020-04-09T01:41:28.527170Z	  108 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:41:28.527702Z	  108 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'boo'
+2020-04-09T01:41:28.528327Z	  108 Close stmt	
+2020-04-09T01:41:28.806889Z	  108 Quit	
+2020-04-09T01:46:30.159124Z	  109 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:46:30.159930Z	  109 Query	SET NAMES utf8
+2020-04-09T01:46:30.174719Z	  109 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:46:30.175021Z	  109 Execute	SELECT * FROM `users` WHERE `username` = 'bah' LIMIT 1
+2020-04-09T01:46:30.175609Z	  109 Close stmt	
+2020-04-09T01:46:30.175952Z	  109 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:46:30.176200Z	  109 Execute	SELECT * FROM `users` WHERE `email` = 'bah@email.com' LIMIT 1
+2020-04-09T01:46:30.176680Z	  109 Close stmt	
+2020-04-09T01:46:31.023308Z	  109 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:46:31.023818Z	  109 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('bah', '$argon2id$v=19$m=65536,t=4,p=1$VFBtcmdZT2JuVWViTkxOLg$39ymNmpq8bcIdH5gY+HUCVqE5PtzH/xLq+Que5ct53A', 'bah@email.com')
+2020-04-09T01:46:31.027582Z	  109 Close stmt	
+2020-04-09T01:46:31.028180Z	  109 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:46:31.028508Z	  109 Execute	SELECT * FROM `users` WHERE (`userid` = '11')
+2020-04-09T01:46:31.029033Z	  109 Close stmt	
+2020-04-09T01:46:31.324163Z	  109 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:46:31.324654Z	  109 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'bah'
+2020-04-09T01:46:31.325523Z	  109 Close stmt	
+2020-04-09T01:46:31.604438Z	  109 Quit	
+2020-04-09T01:46:47.643692Z	  110 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:46:47.644220Z	  110 Query	SET NAMES utf8
+2020-04-09T01:46:47.658305Z	  110 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:46:47.658559Z	  110 Execute	SELECT * FROM `users` WHERE `username` = 'beah' LIMIT 1
+2020-04-09T01:46:47.659019Z	  110 Close stmt	
+2020-04-09T01:46:47.659325Z	  110 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:46:47.659605Z	  110 Execute	SELECT * FROM `users` WHERE `email` = 'beah@email.com' LIMIT 1
+2020-04-09T01:46:47.659994Z	  110 Close stmt	
+2020-04-09T01:46:48.495000Z	  110 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:46:48.495452Z	  110 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('beah', '$argon2id$v=19$m=65536,t=4,p=1$V1NGRk1kTHI5R0J1djVoQw$iSVVJ9sUKqQS4nd7qVKi+GJPHqAtp+NIxz4xEpHmJNA', 'beah@email.com')
+2020-04-09T01:46:48.499301Z	  110 Close stmt	
+2020-04-09T01:46:48.499842Z	  110 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:46:48.500230Z	  110 Execute	SELECT * FROM `users` WHERE (`userid` = '12')
+2020-04-09T01:46:48.500722Z	  110 Close stmt	
+2020-04-09T01:46:48.793383Z	  110 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:46:48.793814Z	  110 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'beah'
+2020-04-09T01:46:48.794451Z	  110 Close stmt	
+2020-04-09T01:46:49.071402Z	  110 Quit	
+2020-04-09T01:48:24.582120Z	  111 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:48:24.582997Z	  111 Query	SET NAMES utf8
+2020-04-09T01:48:24.598958Z	  111 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:48:24.599277Z	  111 Execute	SELECT * FROM `users` WHERE `username` = 'another' LIMIT 1
+2020-04-09T01:48:24.599686Z	  111 Close stmt	
+2020-04-09T01:48:24.600066Z	  111 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:48:24.600320Z	  111 Execute	SELECT * FROM `users` WHERE `email` = 'another@email.com' LIMIT 1
+2020-04-09T01:48:24.600693Z	  111 Close stmt	
+2020-04-09T01:48:25.437535Z	  111 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:48:25.438074Z	  111 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('another', '$argon2id$v=19$m=65536,t=4,p=1$ckJtaDNkWk1IRDJRUVJpdg$+NYaYeP/RGmEVoslT0wF5SjThuFi+XQ7ziMGckHDW5c', 'another@email.com')
+2020-04-09T01:48:25.441728Z	  111 Close stmt	
+2020-04-09T01:48:25.442225Z	  111 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:48:25.442562Z	  111 Execute	SELECT * FROM `users` WHERE (`userid` = '13')
+2020-04-09T01:48:25.443080Z	  111 Close stmt	
+2020-04-09T01:48:25.740768Z	  111 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:48:25.741272Z	  111 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'another'
+2020-04-09T01:48:25.741837Z	  111 Close stmt	
+2020-04-09T01:48:26.022364Z	  111 Quit	
+2020-04-09T01:48:36.240808Z	  112 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:48:36.241358Z	  112 Query	SET NAMES utf8
+2020-04-09T01:48:36.265644Z	  112 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:48:36.266012Z	  112 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'another'
+2020-04-09T01:48:36.266537Z	  112 Close stmt	
+2020-04-09T01:48:36.553167Z	  112 Quit	
+2020-04-09T01:48:36.657813Z	  113 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:48:36.658371Z	  113 Query	SET NAMES utf8
+2020-04-09T01:48:36.678368Z	  113 Quit	
+2020-04-09T01:48:36.988162Z	  114 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:48:36.988987Z	  114 Query	SET NAMES utf8
+2020-04-09T01:48:37.042420Z	  114 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:48:37.043056Z	  114 Execute	SELECT * FROM `users` WHERE (`userid` = 13)
+2020-04-09T01:48:37.043732Z	  114 Close stmt	
+2020-04-09T01:48:37.044351Z	  114 Quit	
+2020-04-09T01:55:47.180239Z	  115 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:55:47.181348Z	  115 Query	SET NAMES utf8
+2020-04-09T01:55:47.209006Z	  115 Quit	
+2020-04-09T01:56:08.490629Z	  116 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:56:08.491056Z	  116 Query	SET NAMES utf8
+2020-04-09T01:56:08.508859Z	  116 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:56:08.509139Z	  116 Execute	SELECT * FROM `users` WHERE `username` = 'boon' LIMIT 1
+2020-04-09T01:56:08.509571Z	  116 Close stmt	
+2020-04-09T01:56:08.509852Z	  116 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:56:08.510116Z	  116 Execute	SELECT * FROM `users` WHERE `email` = 'boon@email.com' LIMIT 1
+2020-04-09T01:56:08.510497Z	  116 Close stmt	
+2020-04-09T01:56:09.347991Z	  116 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:56:09.349450Z	  116 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('boon', '$argon2id$v=19$m=65536,t=4,p=1$OGg4SlNqZnJ3RDhaZkgyLg$PBp9oUFm/KnzELQnRsr5fu88GjotX3KKw7nZZuSogGE', 'boon@email.com')
+2020-04-09T01:56:09.352546Z	  116 Close stmt	
+2020-04-09T01:56:09.353478Z	  116 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:56:09.353704Z	  116 Execute	SELECT * FROM `users` WHERE (`userid` = '14')
+2020-04-09T01:56:09.354149Z	  116 Close stmt	
+2020-04-09T01:56:09.379800Z	  116 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:56:09.380071Z	  116 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'boon'
+2020-04-09T01:56:09.380481Z	  116 Close stmt	
+2020-04-09T01:56:09.659824Z	  116 Quit	
+2020-04-09T01:58:22.184756Z	  117 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T01:58:22.185651Z	  117 Query	SET NAMES utf8
+2020-04-09T01:58:22.200125Z	  117 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T01:58:22.200450Z	  117 Execute	SELECT * FROM `users` WHERE `username` = 'bon' LIMIT 1
+2020-04-09T01:58:22.201041Z	  117 Close stmt	
+2020-04-09T01:58:22.201405Z	  117 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T01:58:22.201673Z	  117 Execute	SELECT * FROM `users` WHERE `email` = 'bon@email.com' LIMIT 1
+2020-04-09T01:58:22.202170Z	  117 Close stmt	
+2020-04-09T01:58:23.053455Z	  117 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T01:58:23.053911Z	  117 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('bon', '$argon2id$v=19$m=65536,t=4,p=1$WnZDbElsQm01VnZ5VG5oUA$cerLuCvcEG2idt4oqdRiZohtGre5a1W8BtJcTc+4NNM', 'bon@email.com')
+2020-04-09T01:58:23.057835Z	  117 Close stmt	
+2020-04-09T01:58:23.058299Z	  117 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T01:58:23.058776Z	  117 Execute	SELECT * FROM `users` WHERE (`userid` = '15')
+2020-04-09T01:58:23.059357Z	  117 Close stmt	
+2020-04-09T01:58:23.087131Z	  117 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T01:58:23.087388Z	  117 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'bon'
+2020-04-09T01:58:23.092233Z	  117 Close stmt	
+2020-04-09T01:58:23.369303Z	  117 Quit	
+2020-04-09T02:18:56.512153Z	  118 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T02:18:56.512997Z	  118 Query	SET NAMES utf8
+2020-04-09T02:18:56.531671Z	  118 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T02:18:56.532037Z	  118 Execute	SELECT * FROM `users` WHERE `username` = 'hao' LIMIT 1
+2020-04-09T02:18:56.532649Z	  118 Close stmt	
+2020-04-09T02:18:56.533118Z	  118 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T02:18:56.533519Z	  118 Execute	SELECT * FROM `users` WHERE `email` = 'hao@email.com' LIMIT 1
+2020-04-09T02:18:56.534080Z	  118 Close stmt	
+2020-04-09T02:18:57.373485Z	  118 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T02:18:57.373984Z	  118 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('hao', '$argon2id$v=19$m=65536,t=4,p=1$WDRLL0NpUkdqT0doc3I0Mw$1PzPWc2pWJOWBGuB3pnbSj0+pG53Pb/jbkqmQkAzDBg', 'hao@email.com')
+2020-04-09T02:18:57.377869Z	  118 Close stmt	
+2020-04-09T02:18:57.378425Z	  118 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T02:18:57.378766Z	  118 Execute	SELECT * FROM `users` WHERE (`userid` = '16')
+2020-04-09T02:18:57.379333Z	  118 Close stmt	
+2020-04-09T02:18:57.383718Z	  118 Quit	
+2020-04-09T02:19:03.171703Z	  119 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T02:19:03.172341Z	  119 Query	SET NAMES utf8
+2020-04-09T02:19:03.195595Z	  119 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T02:19:03.195886Z	  119 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T02:19:03.196429Z	  119 Close stmt	
+2020-04-09T02:19:03.481930Z	  119 Quit	
+2020-04-09T02:19:03.595963Z	  120 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T02:19:03.596546Z	  120 Query	SET NAMES utf8
+2020-04-09T02:19:03.617150Z	  120 Quit	
+2020-04-09T02:19:03.908034Z	  121 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T02:19:03.908577Z	  121 Query	SET NAMES utf8
+2020-04-09T02:19:03.931733Z	  121 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T02:19:03.932091Z	  121 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T02:19:03.932566Z	  121 Close stmt	
+2020-04-09T02:19:03.933143Z	  121 Quit	
+2020-04-09T22:30:07.630853Z	  122 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:30:07.654570Z	  122 Query	SET NAMES utf8
+2020-04-09T22:30:07.697638Z	  122 Quit	
+2020-04-09T22:31:42.745073Z	  123 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:31:42.750083Z	  123 Query	SET NAMES utf8
+2020-04-09T22:31:42.820754Z	  123 Quit	
+2020-04-09T22:31:45.586666Z	  124 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:31:45.588756Z	  124 Query	SET NAMES utf8
+2020-04-09T22:31:45.610164Z	  124 Quit	
+2020-04-09T22:32:51.627995Z	  125 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:32:51.629783Z	  125 Query	SET NAMES utf8
+2020-04-09T22:32:51.654080Z	  125 Quit	
+2020-04-09T22:32:58.624404Z	  126 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:32:58.625852Z	  126 Query	SET NAMES utf8
+2020-04-09T22:32:58.644788Z	  126 Quit	
+2020-04-09T22:50:26.014506Z	  127 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:50:26.016525Z	  127 Query	SET NAMES utf8
+2020-04-09T22:50:26.038450Z	  127 Quit	
+2020-04-09T22:51:27.070923Z	  128 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:51:27.072715Z	  128 Query	SET NAMES utf8
+2020-04-09T22:51:27.106215Z	  128 Quit	
+2020-04-09T22:51:27.236400Z	  129 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:51:27.318189Z	  129 Query	SET NAMES utf8
+2020-04-09T22:51:27.354969Z	  129 Quit	
+2020-04-09T22:51:33.843046Z	  130 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:51:33.845395Z	  130 Query	SET NAMES utf8
+2020-04-09T22:51:33.887484Z	  130 Quit	
+2020-04-09T22:51:34.434781Z	  131 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:51:34.437035Z	  131 Query	SET NAMES utf8
+2020-04-09T22:51:34.501697Z	  131 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:51:34.503802Z	  131 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:51:34.527848Z	  131 Close stmt	
+2020-04-09T22:51:34.528729Z	  131 Quit	
+2020-04-09T22:52:32.532281Z	  132 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:52:32.534485Z	  132 Query	SET NAMES utf8
+2020-04-09T22:52:32.558332Z	  132 Quit	
+2020-04-09T22:52:33.023277Z	  133 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:52:33.025131Z	  133 Query	SET NAMES utf8
+2020-04-09T22:52:33.047505Z	  133 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:52:33.047889Z	  133 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:52:33.049292Z	  133 Close stmt	
+2020-04-09T22:52:33.049672Z	  133 Quit	
+2020-04-09T22:54:55.335948Z	  134 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:54:55.338996Z	  134 Query	SET NAMES utf8
+2020-04-09T22:54:55.364316Z	  134 Quit	
+2020-04-09T22:54:55.937283Z	  135 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:54:55.939769Z	  135 Query	SET NAMES utf8
+2020-04-09T22:54:55.968135Z	  135 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:54:55.968521Z	  135 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:54:55.969802Z	  135 Close stmt	
+2020-04-09T22:54:55.970867Z	  135 Quit	
+2020-04-09T22:55:12.599988Z	  136 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:12.601746Z	  136 Query	SET NAMES utf8
+2020-04-09T22:55:12.628426Z	  136 Quit	
+2020-04-09T22:55:12.928344Z	  137 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:12.930703Z	  137 Query	SET NAMES utf8
+2020-04-09T22:55:12.986853Z	  137 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:55:12.987399Z	  137 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:55:12.989451Z	  137 Close stmt	
+2020-04-09T22:55:12.990090Z	  137 Quit	
+2020-04-09T22:55:19.636628Z	  138 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:19.638785Z	  138 Query	SET NAMES utf8
+2020-04-09T22:55:19.666112Z	  138 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:55:19.666520Z	  138 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:55:19.668861Z	  138 Close stmt	
+2020-04-09T22:55:19.669232Z	  138 Quit	
+2020-04-09T22:55:26.423614Z	  139 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:26.425135Z	  139 Query	SET NAMES utf8
+2020-04-09T22:55:26.452029Z	  139 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:55:26.452997Z	  139 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:55:26.468611Z	  139 Close stmt	
+2020-04-09T22:55:26.904040Z	  139 Quit	
+2020-04-09T22:55:27.021340Z	  140 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:27.022350Z	  140 Query	SET NAMES utf8
+2020-04-09T22:55:27.042516Z	  140 Quit	
+2020-04-09T22:55:27.293244Z	  141 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:27.295230Z	  141 Query	SET NAMES utf8
+2020-04-09T22:55:27.323282Z	  141 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:55:27.323867Z	  141 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:55:27.325592Z	  141 Close stmt	
+2020-04-09T22:55:27.326045Z	  141 Quit	
+2020-04-09T22:55:39.246465Z	  142 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:39.247594Z	  142 Query	SET NAMES utf8
+2020-04-09T22:55:39.272456Z	  142 Quit	
+2020-04-09T22:55:39.493484Z	  143 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:39.495865Z	  143 Query	SET NAMES utf8
+2020-04-09T22:55:39.544538Z	  143 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:55:39.545143Z	  143 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:55:39.546411Z	  143 Close stmt	
+2020-04-09T22:55:39.546971Z	  143 Quit	
+2020-04-09T22:55:49.834369Z	  144 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:49.835392Z	  144 Query	SET NAMES utf8
+2020-04-09T22:55:49.875950Z	  144 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:55:49.876437Z	  144 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:55:49.879112Z	  144 Close stmt	
+2020-04-09T22:55:50.179212Z	  144 Quit	
+2020-04-09T22:55:50.266883Z	  145 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:50.267871Z	  145 Query	SET NAMES utf8
+2020-04-09T22:55:50.283866Z	  145 Quit	
+2020-04-09T22:55:50.500585Z	  146 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:55:50.502065Z	  146 Query	SET NAMES utf8
+2020-04-09T22:55:50.537311Z	  146 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:55:50.537800Z	  146 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:55:50.539230Z	  146 Close stmt	
+2020-04-09T22:55:50.539684Z	  146 Quit	
+2020-04-09T22:56:01.582512Z	   77 Query	SELECT * FROM db.users
+LIMIT 0, 1000
+2020-04-09T22:56:01.724300Z	   76 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 77
+2020-04-09T22:56:01.871491Z	   76 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T22:56:01.874423Z	   76 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 0
+2020-04-09T22:56:01.934472Z	   76 Query	SHOW INDEX FROM `db`.`users`
+2020-04-09T22:57:26.033919Z	  147 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:26.036160Z	  147 Query	SET NAMES utf8
+2020-04-09T22:57:26.063174Z	  147 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:57:26.063670Z	  147 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:57:26.064537Z	  147 Close stmt	
+2020-04-09T22:57:26.348807Z	  147 Quit	
+2020-04-09T22:57:26.461582Z	  148 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:26.462782Z	  148 Query	SET NAMES utf8
+2020-04-09T22:57:26.488362Z	  148 Quit	
+2020-04-09T22:57:26.741038Z	  149 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:26.742356Z	  149 Query	SET NAMES utf8
+2020-04-09T22:57:26.779625Z	  149 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:57:26.780151Z	  149 Execute	SELECT * FROM `users` WHERE (`userid` = 16)
+2020-04-09T22:57:26.781518Z	  149 Close stmt	
+2020-04-09T22:57:26.782092Z	  149 Quit	
+2020-04-09T22:57:37.114129Z	  150 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:37.115112Z	  150 Query	SET NAMES utf8
+2020-04-09T22:57:37.148873Z	  150 Prepare	UPDATE `users` SET `password` = ? WHERE (`userid` = ?)
+2020-04-09T22:57:37.149272Z	  150 Execute	UPDATE `users` SET `password` = 'haoa' WHERE (`userid` = 16)
+2020-04-09T22:57:37.194741Z	  150 Close stmt	
+2020-04-09T22:57:37.196025Z	  150 Quit	
+2020-04-09T22:57:49.904093Z	  151 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:49.905333Z	  151 Query	SET NAMES utf8
+2020-04-09T22:57:49.930599Z	  151 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:57:49.930970Z	  151 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:57:49.931678Z	  151 Close stmt	
+2020-04-09T22:57:49.932398Z	  151 Quit	
+2020-04-09T22:57:53.807685Z	  152 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:53.809186Z	  152 Query	SET NAMES utf8
+2020-04-09T22:57:53.832069Z	  152 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:57:53.832385Z	  152 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:57:53.832968Z	  152 Close stmt	
+2020-04-09T22:57:53.833461Z	  152 Quit	
+2020-04-09T22:57:56.119529Z	  153 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:57:56.121302Z	  153 Query	SET NAMES utf8
+2020-04-09T22:57:56.147957Z	  153 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:57:56.148486Z	  153 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:57:56.149153Z	  153 Close stmt	
+2020-04-09T22:57:56.149844Z	  153 Quit	
+2020-04-09T22:58:09.586949Z	  154 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:58:09.588290Z	  154 Query	SET NAMES utf8
+2020-04-09T22:58:09.613040Z	  154 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:58:09.613429Z	  154 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'hao'
+2020-04-09T22:58:09.614036Z	  154 Close stmt	
+2020-04-09T22:58:09.614824Z	  154 Quit	
+2020-04-09T22:58:48.907703Z	  155 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:58:48.908947Z	  155 Query	SET NAMES utf8
+2020-04-09T22:58:48.931254Z	  155 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T22:58:48.931785Z	  155 Execute	SELECT * FROM `users` WHERE `username` = 'uni' LIMIT 1
+2020-04-09T22:58:48.933621Z	  155 Close stmt	
+2020-04-09T22:58:48.934113Z	  155 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T22:58:48.934441Z	  155 Execute	SELECT * FROM `users` WHERE `email` = 'uni@email.com' LIMIT 1
+2020-04-09T22:58:48.935067Z	  155 Close stmt	
+2020-04-09T22:58:49.807224Z	  155 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T22:58:49.807777Z	  155 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('uni', '$argon2id$v=19$m=65536,t=4,p=1$UVJ6elNLVU9VMU5IUWtteg$kcoULwjJFa5tkEC8PkNBm6m+I78OiuluiX9uqu9uRI8', 'uni@email.com')
+2020-04-09T22:58:49.816617Z	  155 Close stmt	
+2020-04-09T22:58:49.817188Z	  155 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:58:49.817594Z	  155 Execute	SELECT * FROM `users` WHERE (`userid` = '17')
+2020-04-09T22:58:49.818207Z	  155 Close stmt	
+2020-04-09T22:58:49.822743Z	  155 Quit	
+2020-04-09T22:58:58.242023Z	  156 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:58:58.243357Z	  156 Query	SET NAMES utf8
+2020-04-09T22:58:58.272480Z	  156 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T22:58:58.273053Z	  156 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'uni'
+2020-04-09T22:58:58.274083Z	  156 Close stmt	
+2020-04-09T22:58:58.571624Z	  156 Quit	
+2020-04-09T22:58:58.686332Z	  157 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:58:58.687485Z	  157 Query	SET NAMES utf8
+2020-04-09T22:58:58.705054Z	  157 Quit	
+2020-04-09T22:58:58.917271Z	  158 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:58:58.918867Z	  158 Query	SET NAMES utf8
+2020-04-09T22:58:58.949486Z	  158 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T22:58:58.950011Z	  158 Execute	SELECT * FROM `users` WHERE (`userid` = 17)
+2020-04-09T22:58:58.951003Z	  158 Close stmt	
+2020-04-09T22:58:58.951527Z	  158 Quit	
+2020-04-09T22:59:06.493847Z	  159 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:59:06.495232Z	  159 Query	SET NAMES utf8
+2020-04-09T22:59:06.519058Z	  159 Prepare	UPDATE `users` SET `password` = ? WHERE (`userid` = ?)
+2020-04-09T22:59:06.519388Z	  159 Execute	UPDATE `users` SET `password` = 'unit' WHERE (`userid` = 17)
+2020-04-09T22:59:06.523756Z	  159 Close stmt	
+2020-04-09T22:59:06.524573Z	  159 Quit	
+2020-04-09T22:59:26.094597Z	  160 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T22:59:26.095756Z	  160 Query	SET NAMES utf8
+2020-04-09T22:59:26.125186Z	  160 Prepare	UPDATE `users` SET `password` = ? WHERE (`userid` = ?)
+2020-04-09T22:59:26.125506Z	  160 Execute	UPDATE `users` SET `password` = 'unit' WHERE (`userid` = 17)
+2020-04-09T22:59:26.126191Z	  160 Close stmt	
+2020-04-09T22:59:26.126652Z	  160 Quit	
+2020-04-09T23:00:54.908005Z	  161 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:00:54.909395Z	  161 Query	SET NAMES utf8
+2020-04-09T23:00:54.925317Z	  161 Quit	
+2020-04-09T23:01:22.764763Z	  162 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:01:22.766134Z	  162 Query	SET NAMES utf8
+2020-04-09T23:01:22.801108Z	  162 Quit	
+2020-04-09T23:01:23.085649Z	  163 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:01:23.089305Z	  163 Query	SET NAMES utf8
+2020-04-09T23:01:23.108815Z	  163 Quit	
+2020-04-09T23:03:48.867650Z	  164 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:03:48.870442Z	  164 Query	SET NAMES utf8
+2020-04-09T23:03:48.892940Z	  164 Quit	
+2020-04-09T23:03:50.009182Z	  165 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:03:50.011093Z	  165 Query	SET NAMES utf8
+2020-04-09T23:03:50.030197Z	  165 Quit	
+2020-04-09T23:03:50.852079Z	  166 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:03:50.854154Z	  166 Query	SET NAMES utf8
+2020-04-09T23:03:50.874663Z	  166 Quit	
+2020-04-09T23:04:20.194921Z	  167 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:04:20.196714Z	  167 Query	SET NAMES utf8
+2020-04-09T23:04:20.220368Z	  167 Quit	
+2020-04-09T23:04:20.471367Z	  168 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:04:20.472827Z	  168 Query	SET NAMES utf8
+2020-04-09T23:04:20.502655Z	  168 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:04:20.503066Z	  168 Execute	SELECT * FROM `users` WHERE (`userid` = 17)
+2020-04-09T23:04:20.503894Z	  168 Close stmt	
+2020-04-09T23:04:20.504345Z	  168 Quit	
+2020-04-09T23:04:28.431025Z	  169 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:04:28.434233Z	  169 Query	SET NAMES utf8
+2020-04-09T23:04:28.467601Z	  169 Prepare	UPDATE `users` SET `password` = ? WHERE (`userid` = ?)
+2020-04-09T23:04:28.468093Z	  169 Execute	UPDATE `users` SET `password` = 'unia' WHERE (`userid` = 17)
+2020-04-09T23:04:28.472945Z	  169 Close stmt	
+2020-04-09T23:04:28.473937Z	  169 Quit	
+2020-04-09T23:05:04.778117Z	  170 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:05:04.779365Z	  170 Query	SET NAMES utf8
+2020-04-09T23:05:04.802635Z	  170 Quit	
+2020-04-09T23:05:05.311005Z	  171 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:05:05.313041Z	  171 Query	SET NAMES utf8
+2020-04-09T23:05:05.352407Z	  171 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:05:05.352949Z	  171 Execute	SELECT * FROM `users` WHERE (`userid` = 17)
+2020-04-09T23:05:05.354037Z	  171 Close stmt	
+2020-04-09T23:05:05.354572Z	  171 Quit	
+2020-04-09T23:05:14.244552Z	  172 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:05:14.246191Z	  172 Query	SET NAMES utf8
+2020-04-09T23:05:14.291075Z	  172 Prepare	UPDATE `users` SET `password` = ? WHERE (`userid` = ?)
+2020-04-09T23:05:14.291472Z	  172 Execute	UPDATE `users` SET `password` = 'uniq' WHERE (`userid` = 17)
+2020-04-09T23:05:14.303966Z	  172 Close stmt	
+2020-04-09T23:05:14.304438Z	  172 Quit	
+2020-04-09T23:05:43.591160Z	  173 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:05:43.592974Z	  173 Query	SET NAMES utf8
+2020-04-09T23:05:43.625604Z	  173 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:05:43.625974Z	  173 Execute	SELECT * FROM `users` WHERE (`userid` = 17)
+2020-04-09T23:05:43.626725Z	  173 Close stmt	
+2020-04-09T23:05:43.627228Z	  173 Quit	
+2020-04-09T23:06:49.293663Z	  174 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:06:49.295657Z	  174 Query	SET NAMES utf8
+2020-04-09T23:06:49.312349Z	  174 Quit	
+2020-04-09T23:07:34.970461Z	   77 Query	TRUNCATE TABLE db.users
+2020-04-09T23:08:38.974827Z	  175 Connect	root@localhost on  using Socket
+2020-04-09T23:08:38.979118Z	  175 Query	/*!40100 SET @@SQL_MODE='' */
+2020-04-09T23:08:38.981155Z	  175 Query	/*!40103 SET TIME_ZONE='+00:00' */
+2020-04-09T23:08:38.982706Z	  175 Query	/*!80000 SET SESSION information_schema_stats_expiry=0 */
+2020-04-09T23:08:38.985418Z	  175 Query	SET SESSION NET_READ_TIMEOUT= 700, SESSION NET_WRITE_TIMEOUT= 700
+2020-04-09T23:08:38.988570Z	  175 Query	SHOW VARIABLES LIKE 'gtid\_mode'
+2020-04-09T23:08:39.095985Z	  175 Query	SELECT LOGFILE_GROUP_NAME, FILE_NAME, TOTAL_EXTENTS, INITIAL_SIZE, ENGINE, EXTRA FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'UNDO LOG' AND FILE_NAME IS NOT NULL AND LOGFILE_GROUP_NAME IS NOT NULL AND LOGFILE_GROUP_NAME IN (SELECT DISTINCT LOGFILE_GROUP_NAME FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'DATAFILE' AND TABLESPACE_NAME IN (SELECT DISTINCT TABLESPACE_NAME FROM INFORMATION_SCHEMA.PARTITIONS WHERE TABLE_SCHEMA IN ('db'))) GROUP BY LOGFILE_GROUP_NAME, FILE_NAME, ENGINE, TOTAL_EXTENTS, INITIAL_SIZE ORDER BY LOGFILE_GROUP_NAME
+2020-04-09T23:08:39.132192Z	  175 Query	SELECT DISTINCT TABLESPACE_NAME, FILE_NAME, LOGFILE_GROUP_NAME, EXTENT_SIZE, INITIAL_SIZE, ENGINE FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'DATAFILE' AND TABLESPACE_NAME IN (SELECT DISTINCT TABLESPACE_NAME FROM INFORMATION_SCHEMA.PARTITIONS WHERE TABLE_SCHEMA IN ('db')) ORDER BY TABLESPACE_NAME, LOGFILE_GROUP_NAME
+2020-04-09T23:08:39.135151Z	  175 Query	SHOW VARIABLES LIKE 'ndbinfo\_version'
+2020-04-09T23:08:39.137783Z	  175 Init DB	db
+2020-04-09T23:08:39.138492Z	  175 Query	show tables
+2020-04-09T23:08:39.143555Z	  175 Query	LOCK TABLES `users` READ /*!32311 LOCAL */
+2020-04-09T23:08:39.151902Z	  175 Query	show table status like 'users'
+2020-04-09T23:08:39.155280Z	  175 Query	SET SQL_QUOTE_SHOW_CREATE=1
+2020-04-09T23:08:39.155790Z	  175 Query	SET SESSION character_set_results = 'binary'
+2020-04-09T23:08:39.156449Z	  175 Query	show create table `users`
+2020-04-09T23:08:39.159923Z	  175 Query	SET SESSION character_set_results = 'utf8mb4'
+2020-04-09T23:08:39.160862Z	  175 Query	show fields from `users`
+2020-04-09T23:08:39.167896Z	  175 Query	show fields from `users`
+2020-04-09T23:08:39.170631Z	  175 Query	SELECT /*!40001 SQL_NO_CACHE */ * FROM `users`
+2020-04-09T23:08:39.171602Z	  175 Query	SET SESSION character_set_results = 'binary'
+2020-04-09T23:08:39.172471Z	  175 Query	use `db`
+2020-04-09T23:08:39.173360Z	  175 Query	select @@collation_database
+2020-04-09T23:08:39.174788Z	  175 Query	SHOW TRIGGERS LIKE 'users'
+2020-04-09T23:08:39.179392Z	  175 Query	SET SESSION character_set_results = 'utf8mb4'
+2020-04-09T23:08:39.180172Z	  175 Query	SET SESSION character_set_results = 'binary'
+2020-04-09T23:08:39.180843Z	  175 Query	SELECT COLUMN_NAME,                       JSON_EXTRACT(HISTOGRAM, '$."number-of-buckets-specified"')                FROM information_schema.COLUMN_STATISTICS                WHERE SCHEMA_NAME = 'db' AND TABLE_NAME = 'users'
+2020-04-09T23:08:39.184258Z	  175 Query	SET SESSION character_set_results = 'utf8mb4'
+2020-04-09T23:08:39.184868Z	  175 Query	UNLOCK TABLES
+2020-04-09T23:08:39.185782Z	  175 Quit	
+2020-04-09T23:09:01.915509Z	  176 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:01.916976Z	  176 Query	SET NAMES utf8
+2020-04-09T23:09:01.940912Z	  176 Prepare	SELECT * FROM `users` WHERE `username` = ? LIMIT 1
+2020-04-09T23:09:01.941312Z	  176 Execute	SELECT * FROM `users` WHERE `username` = 'admin' LIMIT 1
+2020-04-09T23:09:01.941937Z	  176 Close stmt	
+2020-04-09T23:09:01.942444Z	  176 Prepare	SELECT * FROM `users` WHERE `email` = ? LIMIT 1
+2020-04-09T23:09:01.942798Z	  176 Execute	SELECT * FROM `users` WHERE `email` = 'admin@email.com' LIMIT 1
+2020-04-09T23:09:01.943406Z	  176 Close stmt	
+2020-04-09T23:09:02.842519Z	  176 Prepare	INSERT INTO `users` (`username`, `password`, `email`) VALUES (?, ?, ?)
+2020-04-09T23:09:02.843208Z	  176 Execute	INSERT INTO `users` (`username`, `password`, `email`) VALUES ('admin', '$argon2id$v=19$m=65536,t=4,p=1$ZHQ1TkJRWGFnN0lFSHpOVA$oR+CcNEfR7OOc1RBPEB2Fn76q9TZdZ22RETFt7LeHXQ', 'admin@email.com')
+2020-04-09T23:09:02.848781Z	  176 Close stmt	
+2020-04-09T23:09:02.850624Z	  176 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:02.851730Z	  176 Execute	SELECT * FROM `users` WHERE (`userid` = '1')
+2020-04-09T23:09:02.853604Z	  176 Close stmt	
+2020-04-09T23:09:02.864789Z	  176 Quit	
+2020-04-09T23:09:11.267317Z	  177 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:11.268744Z	  177 Query	SET NAMES utf8
+2020-04-09T23:09:11.291801Z	  177 Prepare	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = ?
+2020-04-09T23:09:11.292228Z	  177 Execute	SELECT `userid`, `username`, `password` FROM `users` WHERE `username` = 'admin'
+2020-04-09T23:09:11.292866Z	  177 Close stmt	
+2020-04-09T23:09:11.578796Z	  177 Quit	
+2020-04-09T23:09:11.677594Z	  178 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:11.678948Z	  178 Query	SET NAMES utf8
+2020-04-09T23:09:11.696926Z	  178 Quit	
+2020-04-09T23:09:11.923777Z	  179 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:11.924778Z	  179 Query	SET NAMES utf8
+2020-04-09T23:09:11.944046Z	  179 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:11.944444Z	  179 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T23:09:11.945080Z	  179 Close stmt	
+2020-04-09T23:09:11.945561Z	  179 Quit	
+2020-04-09T23:09:31.020985Z	  180 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:31.021443Z	  181 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:31.024573Z	  180 Query	SET NAMES utf8
+2020-04-09T23:09:31.025919Z	  181 Query	SET NAMES utf8
+2020-04-09T23:09:31.064798Z	  181 Quit	
+2020-04-09T23:09:31.065877Z	  180 Quit	
+2020-04-09T23:09:31.960384Z	  182 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:31.961707Z	  182 Query	SET NAMES utf8
+2020-04-09T23:09:31.994250Z	  182 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:31.994751Z	  182 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T23:09:31.995597Z	  182 Close stmt	
+2020-04-09T23:09:31.996018Z	  182 Quit	
+2020-04-09T23:09:34.807527Z	  183 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:34.808398Z	  183 Query	SET NAMES utf8
+2020-04-09T23:09:34.827673Z	  183 Quit	
+2020-04-09T23:09:35.307730Z	  184 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:35.308996Z	  184 Query	SET NAMES utf8
+2020-04-09T23:09:35.356271Z	  184 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:35.356754Z	  184 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T23:09:35.357742Z	  184 Close stmt	
+2020-04-09T23:09:35.358502Z	  184 Quit	
+2020-04-09T23:09:38.003979Z	  185 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:38.005884Z	  185 Query	SET NAMES utf8
+2020-04-09T23:09:38.035781Z	  185 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:38.036240Z	  185 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T23:09:38.036966Z	  185 Close stmt	
+2020-04-09T23:09:38.037507Z	  185 Quit	
+2020-04-09T23:09:39.919298Z	  186 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:39.921098Z	  186 Query	SET NAMES utf8
+2020-04-09T23:09:39.951551Z	  186 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:39.951972Z	  186 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T23:09:39.952678Z	  186 Close stmt	
+2020-04-09T23:09:39.953045Z	  186 Quit	
+2020-04-09T23:09:41.556959Z	  187 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:09:41.559530Z	  187 Query	SET NAMES utf8
+2020-04-09T23:09:41.587969Z	  187 Prepare	SELECT * FROM `users` WHERE (`userid` = ?)
+2020-04-09T23:09:41.604076Z	  187 Execute	SELECT * FROM `users` WHERE (`userid` = 1)
+2020-04-09T23:09:41.605434Z	  187 Close stmt	
+2020-04-09T23:09:41.606256Z	  187 Quit	
+2020-04-09T23:53:03.783483Z	  188 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:53:03.785579Z	  188 Query	SET NAMES utf8
+2020-04-09T23:53:03.805110Z	  188 Quit	
+2020-04-09T23:53:04.398982Z	  189 Connect	db_user@172.20.0.3 on db using TCP/IP
+2020-04-09T23:53:04.399821Z	  189 Query	SET NAMES utf8
+2020-04-09T23:53:04.422287Z	  189 Quit	

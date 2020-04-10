@@ -1,0 +1,29 @@
+<dmx-session-manager id="session"></dmx-session-manager>
+<!-- Wappler include head-page="index.php" appconnect="local" is="dmx-app" bootstrap4="flatly" fontawesome_4="cdn" jquery_slim_33="cdn" components="{&quot;dmxBrowser&quot;:{},&quot;dmxFormatter&quot;:{},&quot;dmxStateManagement&quot;:{}}" id="app" -->
+<dmx-serverconnect id="sclogout" noload="noload" url="dmxConnect/api/Security/logout.php" dmx-on:success="bwsrlogout.goto('login.php');session.set('loggedin',0)"></dmx-serverconnect>
+<div is="dmx-browser" id="bwsrlogout">
+</div>
+<header class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg bg-light navbar-light">
+					<a class="navbar-brand mr-auto" href="index.php">Navbar</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbar1_collapse">
+						<div class="navbar-nav">
+							<a class="nav-item nav-link active" href="index.php">Home</a>
+							<a class="nav-item nav-link" href="about.php">About</a>
+							<a class="nav-item nav-link btn-primary" href="login.php" style="" dmx-hide="session.data.loggedin==1">
+
+								Login</a>
+							<a class="nav-item nav-link btn-primary ml-2" style="" dmx-on:click="sclogout.load()" dmx-show="session.data.loggedin==1">Log Out</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>

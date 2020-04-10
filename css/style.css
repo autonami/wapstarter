@@ -1,0 +1,9 @@
+a.nav-item.nav-link.btn-primary {
+    border-radius: 5px;
+    color: #ffffff !important;
+    padding: 0.5rem 1rem;
+    margin-left: 5px  
+}
+.btn-account {
+    width: 15em   
+}

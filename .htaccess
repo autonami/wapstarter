@@ -1,0 +1,17 @@
+
+## Wappler routing
+RewriteEngine On
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?(?:/)?$ index.php [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?about(?:/)?$ about.php [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?login(?:/)?$ login.php [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?register(?:/)?$ register.php [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?account(?:/)?$ account.php [QSA,NC,L]
+## End Wappler routing
